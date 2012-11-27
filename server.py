@@ -17,8 +17,8 @@
 ###############################################################################
 
 import os, uuid, sys
-port = int(os.environ.get('PORT_WWW', 80))
-ws_url = os.environ.get('DOTCLOUD_WWW_HTTP_URL', 'http://localhost:80')
+port = int(os.environ.get('PORT', 80))
+ws_url = os.environ.get('HTTP_URL', 'http://localhost:8000')
 ws_url = ws_url.replace('http://', 'ws://')
 
 from twisted.python import log
